@@ -50,19 +50,19 @@ askForInput:
 
 	;Checking for input of just 'q', to quit
 	cmp bytesWritten, 3			
-	je potentialq						;if only one letter was typed, we jump to check if it was q
+	je potentialq				;if only one letter was typed, we jump to check if it was q
 	
 
 
 continueAsNormal:
 	push dword ptr lengthof inputbuffer
 	push offset inputbuffer
-	call findE						;sets ebx to number of 'e's (only lowercase) in input
+	call findE				;sets ebx to number of 'e's (only lowercase) in input
 
-	mov eax, ebx						;prepare to divide number of 'e's by 8
+	mov eax, ebx				;prepare to divide number of 'e's by 8
 	mov ebx, 8
 	mov edx, 0
-	div ebx							;quotient goes to EAX, remainder to EDX
+	div ebx					;quotient goes to EAX, remainder to EDX
 
 	mov moduloNumber, dl
 	cmp edx, 0
@@ -75,7 +75,7 @@ ZeroRemainder:
 	mov eax, offset inputbuffer
 flipBits:
 	XOR [eax], byte ptr 11111111
-	inc eax							;increment eax for next loop
+	inc eax					;increment eax for next loop
 	loop flipBits
 	jmp writeIntoFile
 
