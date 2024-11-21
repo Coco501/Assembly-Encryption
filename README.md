@@ -7,3 +7,4 @@ This was my final project for CISP 310, "Assembly Language Programming for Micro
 4. Running the decrypt.exe program automatically reads from Encrypted_Message.txt in the same directory, and decrypts it by undoing the operations performed in encrypt.exe.
 
 This summary was written over a year after writing the program, some parts may be inaccurate.
+*Note: To be ran in the terminal, encrypt.exe and decrypt.exe require execution permissions. Use "chmod +x encrypt.exe decrypt.exe" to give permission.
