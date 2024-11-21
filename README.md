@@ -6,5 +6,5 @@ This was my final project for CISP 310, "Assembly Language Programming for Micro
 3. It then writes the encrypted message, and a key telling the decrypt program how many rotations to perform, to a text file named Encrypted_Message.txt.
 4. Running the decrypt.exe program automatically reads from Encrypted_Message.txt in the same directory, and decrypts it by undoing the operations performed in encrypt.exe.
 
-This summary was written over a year after writing the program, some parts may be inaccurate.
+This summary was written over a year after writing the program, some parts may be inaccurate. 
 *Note: To be ran in the terminal, encrypt.exe and decrypt.exe require execution permissions. Use "chmod +x encrypt.exe decrypt.exe" to give permission.
